@@ -1,0 +1,17 @@
+后台表结构：
+app.js
+   -router.use("/user",user.routes())
+   -router.use("/admin",admin.routes())
+routes
+    -user.js
+    -admin.js
+module
+      -db.js  (数据库封装)
+      -config.js(数据库的地址)
+
+
+数据库表结构：
+-blog
+ --admin（管理员名称及密码）：name,password
+ --blogs(博客信息)：id,title,content,image,classify,date,comment
+ --userInf(留言)：id，name，Email，content
